@@ -197,36 +197,6 @@ const ApplicationInfosPage = () => {
                         )}
                       </Flex>
                     </GridItem>
-                    <GridItem col={6} s={12}>
-                      <Typography variant="sigma" textColor="neutral600" as="dt">
-                        {formatMessage({
-                          id: 'Settings.application.edition-title',
-                          defaultMessage: 'current plan',
-                        })}
-                      </Typography>
-                      <Flex gap={3} direction="column" alignItems="start" as="dd">
-                        <Typography>
-                          {formatMessage(
-                            {
-                              id: 'Settings.application.ee-or-ce',
-                              defaultMessage:
-                                '{communityEdition, select, true {Community Edition} other {Enterprise Edition}}',
-                            },
-                            { communityEdition }
-                          )}
-                        </Typography>
-                        <Link
-                          href="https://strapi.io/pricing-self-hosted"
-                          isExternal
-                          endIcon={<ExternalLink />}
-                        >
-                          {formatMessage({
-                            id: 'Settings.application.link-pricing',
-                            defaultMessage: 'See all pricing plans',
-                          })}
-                        </Link>
-                      </Flex>
-                    </GridItem>
 
                     <GridItem col={6} s={12}>
                       <Typography variant="sigma" textColor="neutral600" as="dt">
